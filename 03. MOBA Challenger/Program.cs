@@ -64,9 +64,9 @@ while (true)
 		else
 		{
 			if (mobaPlayers[player][position] < skillPoints)
-			{
-                mobaPlayers[player][position] = skillPoints;
-            }
+		        {
+                            mobaPlayers[player][position] = skillPoints;
+            		}
 		}
 	}
 }
