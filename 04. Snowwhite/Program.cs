@@ -3,7 +3,6 @@ string dwarfInfo = Console.ReadLine();
 
 var dwarfs = new Dictionary<string, Dictionary<string, int>>();
 
-
 while (dwarfInfo != "Once upon a time")
 {
     string[] cmdArr = dwarfInfo.Split(" <:> ");
@@ -11,9 +10,7 @@ while (dwarfInfo != "Once upon a time")
     string name = cmdArr[0];
     string  hatColor = cmdArr[1];
     int phisics = int.Parse(cmdArr[2]);
-
     
-
     if (dwarfs.ContainsKey(hatColor) && !dwarfs[hatColor].ContainsKey(name))
     {
         dwarfs[hatColor][name] = phisics;
@@ -31,8 +28,6 @@ while (dwarfInfo != "Once upon a time")
 
     dwarfInfo = Console.ReadLine();
 }
-
-
 
 var sortedDwarfs = new Dictionary<string, int>();
 
